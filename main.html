@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./assests/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+     <!-- HEADER NAV MAIN CONTENT -->
+     <div class="mainheader-content fixed-top py-2">
+        <div class="header-brand py-2 mx-4">Quantum Table</div>
+        <div class="file-box py-2 mx-5">
+            <span class="dashBoard-btn me-3"><i class="fa fa-bars fa-lg"></i></span>
+            <span class="file"><i class="fa fa-files-o fa-lg px-1" aria-hidden="true"></i>Files</span>
+        </div>
+        <!-- DROPDOWN NEED   -->
+        <!-- SEARCH BAR -->
+        <div class="search-wrapper py-2 mx-5">
+            <span class="fa fa-search fa-1x"></span>
+            <input type="search" class="input-header">
+          </div>
+        <!-- AD BUTTON -->
+        <button type="button" id="upgradeBtn" class="btn btn-sm btn-primary mx-5">UPGRADE TO PRO</button>
+         <!-- NOTIFIACTION BTNS -->
+            <div class="icon-btn">
+                <span class="fa fa-bell me-3 px-3 fa-lg"></span>
+                <span class="icon-btn-badge">45</span>
+            </div>
+           <div class="me-3 py-2">
+            <i class="icon-btn fa fa-arrows-alt  fa-lg" aria-hidden="true"></i>
+           </div>
+            <div class="icon-btn">
+                <span class="fa fa-comments me-3 px-3 fa-lg"></span>
+                <span class="icon-btn-badge">8</span>
+            </div>
+        <!-- USER PROFILE  -->
+        <div class="userprofile-wrapper">
+            <img src="./assests/user/profile-picture-1.png" alt="">
+            <!-- DROPDOWN NEED -->
+        </div>
+    </div>
+   
+    <div class="dashboard-content-wrapper">
+        
+    <!-- ASIDE-BAR-CONTENT  -->
+    <div class="side-bar py-2" id="side-bar">
+        <div class="sidebar-menu">
+            <ul class="active py-2">
+                <li>
+                    <span><i class="fa fa-tachometer px-2" aria-hidden="true"></i></span><span>Admin</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-briefcase px-2" aria-hidden="true"></i></span><span>UI Elemnets</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-bar-chart px-2" aria-hidden="true"></i></span><span>Charts & Maps</span>
+                </li>
+                <li>
+                    <i class=" fa fa-clipboard  px-2" aria-hidden="true"></i><a href="#formSubmenu"
+                        data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Form</a>
+                    <ul class="collapse lisst-unstyled" id="formSubmenu">
+                        <li class="submenu mt-2">
+                            <i class="fa fa-sign-in px-2" aria-hidden="true"></i><a href="#formSubmenu">Sign up</a>
+                        </li>
+                        <li class="submenu">
+                            <i class="fa fa-wrench  px-2" aria-hidden="true"></i><a href="#formSubmenu">Renewal</a>
+                        </li>
+                        <li class="submenu">
+                            <i class="fa fa-film  px-2" aria-hidden="true"></i><a href="#formSubmenu">Website</a>
+                        </li>
+                        <li class="submenu">
+                            <i class="fa fa-commenting-o  px-2" aria-hidden="true"></i><a
+                                href="#formSubmenu">feedback</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span><i class="fa fa-align-right px-2" aria-hidden="true"></i></span><span>Table</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-files-o px-2" aria-hidden="true"></i></span><span>Pages</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-anchor px-2" aria-hidden="true"></i></span><span>Menu Level 1</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ASIDE-BAR-CONTENT -->
+        <!-- DASHBOARD WHOLE WRAPPER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dashboardName fw-bolder header-name fs-4 mx-3 p-2">Dashboard</div>
+            </div>
+        </div>
+        <!-- DASHBOARD BODY CONTENT PART STARTS -->
+        <div class="row dashboardBody">
+            <div class="col-md-12">
+                <div class="row fist-row mb-2 p-2">
+                    <!-- FIRST ROW STARTS-->
+                    <div class="col-md-3">
+                        <div class="product card1">
+                            <div class="product-first d-flex justify-content-between">
+                                <span class="p-2 fw-bold">Products</span>
+                                <i class="signal fa fa-signal fa-2x p-1"></i>
+                            </div>
+                            <h1 class="product-sec">4500</h1>
+                            <div class="product-third">
+                                <span class="badge bg-warning fw-bold">sales</span>
+                                <span class="m-2 fw-bold">Ariving Today</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product card2">
+                            <div class="product-first d-flex justify-content-between">
+                                <span class="p-2 fw-bold">Products</span>
+                                <i class="gift fa fa-gift fa-2x p-1"></i>
+                            </div>
+                            <h1 class="product-sec">37,500</h1>
+                            <div class="product-third">
+                                <span class="badge bg-primary">Views</span>
+                                <span class="m-2 fw-bold">Views Today</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product card3">
+                            <div class="product-first d-flex justify-content-between">
+                                <span class="p-2 fw-bold">Products</span>
+                                <i class="map fa fa-map-signs fa-2x p-1"></i>
+                            </div>
+                            <h1 class="product-sec">$30,680</h1>
+                            <div class="product-third">
+                                <span class="badge bg-success">sales</span>
+                                <span class="m-2 fw-bold">Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product card4">
+                            <div class="product-first d-flex justify-content-between">
+                                <span class="p-2 fw-bold">Products</span>
+                                <i class="rocket fa fa-rocket fa-2x p-1"></i>
+                            </div>
+                            <h1 class="product-sec">$30,700</h1>
+                            <div class="product-third">
+                                <span class="badge bg-danger">sales</span>
+                                <span class="m-2 fw-bold">Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIRST ROW ENDS -->
+                <div class="row second-row mb-2 p-2">
+                    <!-- SECOND ROW -->
+                    <div class="col-md-4">
+                        <!-- PROFILE STARTS -->
+                        <div class="profile-card">
+                            <!-- PROFILE BG -->
+                            <div class="profile-bg">
+                                <img class="profile-bg-pic" src="./assests/user/profile-picture-4.png" alt="">
+                                <div class="text-center mt-2">
+                                    <h3 class="profile-name">Mark zuckerberg</h3>
+                                    <h5 class="profile-name">Architect</h5>
+                                </div>
+                            </div>
+                            <!-- PROFILE DESCRIPTION -->
+                            <div class="profile-description mt-3">
+                                <div>
+                                    <ul>
+                                        <li class="border-bottom py-2 d-flex justify-content-between fw-bold">
+                                            <i class="fa fa-clock-o"></i>
+                                            Recent Activites
+                                            <span class="badge bg-primary mx-2">480</span>
+                                        </li>
+                                        <li class="border-bottom py-2  d-flex justify-content-between fw-bold">
+                                            <i class="fa fa-users"></i>
+                                            Current Employees
+                                            <span class="badge bg-primary mx-2">300</span>
+                                        </li>
+                                        <li class=" border-bottom py-2 d-flex justify-content-between fw-bold">
+                                            <i class="fa fa-user"></i>
+                                            Following
+                                            <span class="badge bg-primary mx-2">260</span>
+                                        </li>
+                                        <li class="border-bottom py-2 d-flex justify-content-between fw-bold">
+                                            <i class="fa fa-camera"></i>
+                                            Pictures
+                                            <span class="badge bg-primary mx-2">510</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="profile-btns d-flex justify-content-center">
+                                <button class="btn btn-warning waves-effect waves-light followBtn">FOLLOW</button>
+                                <button class="btn btn-primary waves-effect waves-light msgBtn">MESSAGE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="graphchart-card">
+                                    <h5 class="text-center py-5">Bar-Chart</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-block des-card d-flex p-5">
+                                        <img class="des-img" src="./assests/user/profile-picture-6.png" alt="">
+                                        <div class="des text-center d-inlineblock">
+                                            <h4 class="fw-bold">Buhari</h4>
+                                            <span class="text-primary">buhari@admin.com</span>
+                                        </div>
+                                            <h5 class="text-warning fw-bold rotate-text text-dev">Designer</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-block des-card d-flex p-5">
+                                        <img class="des-img" src="./assests/user/profile-picture-5.png" alt="">
+                                        <div class="des text-center d-inlineblock">
+                                            <h4 class="fw-bold">Sarah</h4>
+                                            <span class="text-primary">sarah@admin.com</span>
+                                        </div>
+                                            <h5 class="text-warning fw-bold rotate-text text-dev">Developer</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- THIRD ROW -->
+                <div class="row third-row p-2">
+                    <div class="col-md-8">
+                        <div class="table-card p-3">
+                            <!-- Table Area Starts -->
+                            <table class="table table-hover align-items-center">
+                                <thead>
+                                    <tr>
+                                        <th>Profile</th>
+                                        <th>Project</th>
+                                        <th>Completed</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div><img width="24px" height="24px"
+                                                    src="./assests/user/profile-picture-1.png" alt=""></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-block ">
+                                                    <span class="fw-bold">Robocompos</span>
+                                                    <div class="fw-lighter">
+                                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                        created on 2014
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><i class="fa fa-pie-chart fa-2x p-1"></i></td>
+                                        <td><span class="text-success">90%</span></td>
+                                        <td><span class="fw-bold">October 21, 2010</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img width="24px" height="24px"
+                                                    src="./assests/user/profile-picture-2.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-block">
+                                                    <span class="fw-bold">DDS wireless</span>
+                                                    <div class="fw-lighter">
+                                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                        created on 2015
+                                                    </div>
+                                                </div>
+                                            </div>
+                        </div>
+                        </td>
+                        <td><i class="fa fa-pie-chart fa-2x p-1"></i></td>
+                        <td><span class="text-info">60%</span></td>
+                        <td><span class="fw-bold">November 21, 2015</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img width="24px" height="24px" src="./assests/user/profile-picture-3.png" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-block">
+                                        <span class="fw-bold">WeldingPro</span>
+                                        <div class="fw-lighter">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            created on 2016
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    </td>
+                    <td><i class="fa fa-pie-chart fa-2x p-1"></i></td>
+                    <td><span class="text-success">85%</span></td>
+                    <td><span class="fw-bold">September 21, 2015</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img width="24px" height="24px" src="./assests/user/profile-picture-4.png" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="d-block">
+                                    <span class="fw-bold">Gardening</span>
+                                    <div class="fw-lighter">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        created on 2018
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </td>
+                <td><i class="fa fa-pie-chart fa-2x p-1"></i></td>
+                <td><span class="text-danger">35%</span></td>
+                <td> <span class="fw-bold">April 21, 2018</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img width="24px" height="24px" src="./assests/user/profile-picture-5.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="d-block">
+                                <span class="fw-bold">SPMT</span>
+                                <div class="fw-lighter">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    created on 2019
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </td>
+            <td><i class="fa fa-pie-chart fa-2x p-1"></i></td>
+            <td><span class="text-danger">45%</span>
+            </td>
+            <td><span class="fw-bold">May 21, 2015</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <img width="24px" height="24px" src="./assests/user/profile-picture-6.png" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="d-block">
+                            <span class="fw-bold">Info-Ship</span>
+                            <div class="fw-lighter">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                created on 2021
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </td>
+        <td><span class="fa fa-pie-chart fa-2x p-1"></span></td>
+        <td><span class='text-warning me-2'> 50%</span></td>
+        <td><span class="fw-bold">Febraury 21, 2015</span>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <!-- Table Area Ends -->
+    </div>
+    </div>
+
+    <!-- THIRD ROW 2ND COL STARTS -->
+    <div class="col-md-4">
+        <div class="barchart-card">
+            <h5 class="text-center py-5">Pie-chart</h5>
+        </div>
+    </div>
+    <!-- THIRD ROW 2nd COL ENDs -->
+    </div>
+
+    </div>
+    </div> <!-- DAHBOARD CONTENT ENDS  -->
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.dashBoard-btn').on('click', function () {
+                $('#side-bar').toggleClass('active');
+            });
+
+        });
+    </script>
+
+    <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/popper.js/dist/popper.min.js"></script>
+<script src="./node_modules/bootstrap/js/dist/"></script> -->
+
+
+</body>
+
+</html>

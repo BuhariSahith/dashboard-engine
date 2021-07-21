@@ -1,0 +1,300 @@
+@import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --main-bg-color: #e5e5e5;
+  --card-color: #fff;
+  --text-color: #fdfdfd;
+  --header-content: #39444e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Ubuntu", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--card-color);
+}
+a:hover {
+  color: var(--card-color);
+}
+.submenu {
+  padding-left: 3rem;
+}
+
+/* ASIDE STYLINGS */
+.side-bar {
+  min-width: 200px;
+  max-width: 200px;
+  position: fixed;
+  left: 0;
+  z-index: 3;
+  top: 56px;
+  height: 100%;
+  background-color: var(--header-content);
+  color: var(--card-color);
+  transition: all 0.3s;
+}
+#side-bar.active {
+  margin-left: -200px;
+}
+.side-bar ul {
+  padding: 0;
+}
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 2.3rem;
+}
+
+
+/* HEADER NAV STYLING */
+.search-wrapper { 
+  position: relative;
+ }
+.search-wrapper input { 
+  text-indent: 30px;
+}
+.search-wrapper .fa-search { 
+  color: var(--header-content);
+  position: absolute;
+  top: .95rem;
+  left: 11.5rem;
+  font-size: 15px;
+}
+.userprofile-wrapper img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  margin-left: 120px;
+}
+/* HEADER NAV NOTIFICATION STYLING */
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.icon-btn-badge {
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  width: 25px;
+  height: 20px;
+  background-color: red;
+  color: var(--text-color);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+
+/* FOR MAIN NAV HEADERS */
+.mainheader-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--header-content);
+  border: none;
+  max-height: 80px;
+  color: #fdfdfd;
+}
+
+.input-header {
+  border: none;
+  border-radius: 8px;
+}
+
+
+/* DASHBOARD CONTENT WRAPPER */
+.dashboard-content-wrapper {
+  overflow-x: hidden;
+  margin-top: 50px;
+  background-color: var(--main-bg-color);
+}
+
+
+
+
+/* LAYOUTING D-CONTENT STYLES  */
+.profile-card {
+  height: 524px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+  border-radius: 8px;
+  background-color: var(--card-color);
+  color: #777;
+}
+.graphchart-card {
+  height: 360px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+  border-radius: 8px;
+  background-color: var(--card-color);
+  color: #777;
+}
+.des-card {
+  height: 140px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+  border-radius: 8px;
+  background-color: var(--card-color);
+  color: #777;
+}
+.dev-card {
+  height: 140px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+  border-radius: 8px;
+  background-color: var(--card-color);
+  color: #777;
+}
+.table-card {
+  height: 460px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+  border-radius: 8px;
+  background-color: var(--card-color);
+  color: #777;
+}
+.barchart-card {
+  height: 460px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+  border-radius: 8px;
+  background-color: var(--card-color);
+  color: #777;
+}
+
+
+/* PRODUCT STYLE 1st ROW */
+.product {
+  height: 124px;
+  background-color: var(--card-color);
+  color: #777777;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px;
+}
+.product-first {
+  margin-left: 15px;
+}
+.product-sec {
+  margin-left: 15px;
+  font-weight: 600;
+}
+.product-third {
+  margin-left: 15px;
+}
+.signal {
+  color: orange;
+}
+.gift {
+  color: blue;
+}
+.map {
+  color: green;
+}
+.rocket {
+  color: red;
+}
+
+/* TABLE STYLING 3rd ROW */
+img {
+  margin-right: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 5rem;
+}
+
+/* 2ND ROW COL SIBLING ROW STYLES */
+.des-img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.des-card {
+  position: relative;
+}
+.text-dev {
+  transform: rotate(90deg);
+  right: -17px;
+  position: absolute;
+}
+.card {
+  border-radius: 18px;
+}
+
+/* 2ND ROW 1ST COL STYLING  */
+.profile-bg {
+  background-color: red;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-bg-pic {
+  width: 120px;
+  height: 120px;
+}
+.profile-name {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+.followBtn {
+  margin-right: 12px;
+}
+
+@media (max-width: 480px) {
+  .card4,
+  .profile-card {
+    margin-bottom: 15px;
+  }
+  .barchart-card {
+    margin-top: 12px;
+  }
+  .table-card {
+    max-width: 100%;
+    height: max-content;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 720px) {
+  #side-bar {
+    margin-left: -200px;
+  }
+  #side-bar.active {
+    margin-left: 0;
+  }
+  .file,
+  .search-wrapper,
+  #upgradeBtn,
+  .icon-btn,
+  .upgradeBtn,
+  .userprofile-wrapper {
+    display: none;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 960px) {
+  #side-bar {
+    margin-left: -200px;
+  }
+  #side-bar.active {
+    margin-left: 0;
+  }
+  .file,
+  .icon-btn,
+  .upgradeBtn,
+  .userprofile-wrapper {
+    display: none;
+  }
+}
